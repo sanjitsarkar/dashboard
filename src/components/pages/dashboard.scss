@@ -1,0 +1,31 @@
+.dashboard{
+    height: 100vh;
+    display: grid;
+    // background: red;
+   grid-template-columns: 20% auto;
+   grid-template-rows: 10vh auto;
+    .header{
+        grid-area: 1/2/2/-1;
+        background: rgb(63, 81, 181);
+        @media only screen and (max-width: 900px) {
+            grid-area: 1/1/2/-1;
+
+        }
+    }
+    .side_bar{
+        grid-area: 1/1/-1/2;
+        @media only screen and (max-width: 900px) {
+            display:none;
+        }
+        background: rgb(38, 52, 131);
+
+    }
+    .main{
+        grid-area: 2/2/-1/-1;
+        
+        @media only screen and (max-width: 900px) {
+            grid-area: 2/1/-1/-1;
+
+        }
+    }
+}

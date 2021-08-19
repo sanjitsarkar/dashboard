@@ -1,0 +1,59 @@
+
+
+.side_bar{
+  
+    display: flex;
+    flex-direction: column;
+  
+    .title{
+        display: flex;
+        color:white;
+        align-items: center;
+        padding-left: 1em;
+        height: 10vh;
+        
+        background: rgb(46, 63, 160);
+
+    }
+    nav.side_nav{
+
+        padding: 3em 0em;
+ul{
+    display: flex;
+
+    flex-direction: column;
+    gap: .5em;
+    li{
+        a{
+            &:hover{
+                transition: all .3s ease-in-out;
+            background: rgba(0, 0, 0, 0.178);
+
+            }
+            color:white;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+
+            gap: 1em;
+            svg.svg-inline--fa{
+                font-size: 1.4em;
+                color:rgb(255, 255, 255) !important;
+            }
+            .name{
+                display: flex;
+                gap: .5em;
+                align-items: center;
+                .badge{
+        color: rgb(6, 42, 77);
+
+                    padding: .4em;
+                    background: white;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+    }
+}
