@@ -19,9 +19,9 @@
     justify-content: space-between;
         border-radius: 2em;
         padding:.6em 1em ;
-        // @media only screen and (max-width: 900px) {
-        //     width: 40%;
-        // }
+        @media only screen and (max-width: 900px) {
+            width: 30%;
+        }
         
         width: 40%;
         background: rgba(255, 255, 255, 0.883);
@@ -32,6 +32,9 @@ background: transparent;
         }
         svg.fa-search{
             // margin-right: .5em;
+            @media only screen and (max-width: 900px) {
+                margin-left: -60vw;
+            }
             display: inline-block;
 color: rgb(83, 83, 83);
         }
