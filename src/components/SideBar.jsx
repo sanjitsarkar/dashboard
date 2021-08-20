@@ -1,6 +1,18 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import './side_bar.scss'
-const SideBar = () => {
+const SideBar = ({toggle}) => {
+ 
+    // const [class_name, setClass_name] = useState("side_bar")
+    // useEffect(()=>{
+    //     if(toggle)
+    //     {
+    //         setClass_name("side_bar hide")
+    //     }
+    //     else{
+    //         setClass_name("side_bar hide")
+
+    //     }
+    //         },[toggle])
     return (
         <div className="side_bar">
             <div className="title">Dashboard Section</div>
