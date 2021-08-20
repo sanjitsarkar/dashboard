@@ -15,10 +15,19 @@
     .side_bar{
         grid-area: 1/1/-1/2;
         @media only screen and (max-width: 900px) {
-            display:none;
+           position: absolute;
+           top:10vh;
+           z-index: 99;
+           width: 100%;
+           opacity: .9;
+
         }
         background: rgb(38, 52, 131);
-
+.title{
+    @media only screen and (max-width: 900px) {
+        display: none;
+     }
+}
     }
     .main{
         grid-area: 2/2/-1/-1;

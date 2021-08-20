@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './header.scss'
-const Header = () => {
+const Header = ({toggleSideBar}) => {
     return (
         <div className="header">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div className="menu" onClick={()=>{toggleSideBar()}}><i class="fa fa-bars" aria-hidden="true"></i></div>
             <div className="search_bar">
                 <input type="text" placeholder="Search..."/>
                 <i className="fa fa-search" aria-hidden="true"></i>
