@@ -36,7 +36,7 @@ const Statistics = () => {
     return (
         <div className="statistics">
           <h3 className="title">Statistics</h3>
-            <ResponsiveContainer width="90%" height="80%">
+            <ResponsiveContainer width="100%" height="80%">
         <BarChart
         //   width={10}
         //   height={20}
