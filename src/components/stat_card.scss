@@ -1,5 +1,6 @@
 .card{
-    // width: 23.5%;
+    flex-basis: 23.8%;
+
     @media only screen and (max-width: 900px) {
         flex-basis: 100%;
     }
