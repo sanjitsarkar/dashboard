@@ -12,7 +12,7 @@ const Login = () => {
         authDispatch({"type":"LOADING"})
        if(username==="admin" && password==="123")
        {
-        authDispatch({"type":"SUCCESS","payload":{username}})
+        authDispatch({"type":"SUCCESS","payload":username})
         authDispatch({"type":"FAILURE","payload":{error:""}})
 
            

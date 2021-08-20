@@ -6,8 +6,8 @@ const SideBar = ({toggle}) => {
     const {authState,authDispatch} = authCtx
     const handleLogout = (e) => {
         e.preventDefault()
-        localStorage?.removeItem("username")
-        authDispatch({type:"SUCCESS",payload:{username:"undefined"}})
+        localStorage.removeItem("username")
+        authDispatch({type:"SUCCESS",payload:""})
 
     }
     // const [class_name, setClass_name] = useState("side_bar")

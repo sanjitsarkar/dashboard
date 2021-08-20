@@ -4,11 +4,11 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 const data = [
   {
-    name: 'January',
+    name: 'Jan',
     sales: 2400
   },
   {
-    name: 'February',
+    name: 'Feb',
     sales: 2210
   },
   {

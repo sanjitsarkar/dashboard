@@ -16,8 +16,8 @@ export const authReducer = (state = initialAuthState,action)=>{
        }
     }
     case "SUCCESS":
-    {
-        localStorage.setItem("username",action.payload.username)
+    {   if(action.payload)
+        localStorage.setItem("username",action.payload)
        return {
            ...state,
            loading:false,

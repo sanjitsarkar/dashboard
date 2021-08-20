@@ -14,7 +14,11 @@ function App() {
   const value = {authState, authDispatch};
   
    useEffect(() => {
-     authDispatch({type:"SUCCESS",payload:{username:localStorage.getItem("username")}})
+     console.log(localStorage?.getItem("username"))
+     if(localStorage?.getItem("username"))
+     authDispatch({type:"SUCCESS",payload:localStorage?.getItem("username")})
+     else
+     authDispatch({type:"SUCCESS",payload:""})
   }, [])
 
   useEffect(()=>{
@@ -32,7 +36,7 @@ function App() {
             
             authState.loading && (<h1>Loading...</h1>)}
             {
-authState.data.username!=="undefined"?
+authState.data!==""?
       <Dashboard/>:
       <Login/>
             
