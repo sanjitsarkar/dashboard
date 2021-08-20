@@ -37,8 +37,8 @@ const ProductStock = () => {
       </PieChart>
   <div className="product_right">
       {
-          data.map(dt=>
-(<div className="label">
+          data.map((dt)=>
+(<div className="label" key={dt.name}>
 <div className="label_top">
     <i className={dt.icon} aria-hidden="true" style={{color:dt.color}}></i>
     <span>{dt.value}%</span>

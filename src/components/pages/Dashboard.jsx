@@ -5,14 +5,16 @@ import SideBar from "../SideBar"
 import  './dashboard.scss'
 const Dashboard = () => {
     const [toggle, setToggle] = useState(true)
-    const [matches, setMatches] = useState(true)
+    const [matches, setMatches] = useState(window.matchMedia("(max-width: 900px)").matches)
     useEffect(()=>{
         const handler = e => setMatches(e.matches);
         window.matchMedia("(max-width: 900px)").addListener(handler);
+        
         return ()=>{
             window.matchMedia("(max-width: 900px)").removeEventListener()
         }
     },[])
+
 
     useEffect(()=>{
          if(!matches)
@@ -21,7 +23,7 @@ const Dashboard = () => {
          setToggle(true)
     },[matches])
     const toggleSideBar = () =>{
-        if(matches)
+        // if(matches)
         setToggle(!toggle)
     }
     return (

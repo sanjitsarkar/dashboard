@@ -14,4 +14,52 @@ li{
 
 .App{
     overflow: hidden;
+    .login{
+        @media only screen and (max-width: 900px) {
+            width:70%;
+        }
+        box-shadow: 0 5px 1em rgba(0, 0, 0, 0.247);
+        background: rgb(13, 157, 206);
+    
+        width: 35%;
+        padding: 1em;
+        margin:1em auto;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap:1em;
+            .errors{
+color: rgb(255, 255, 255);
+            }
+       label{
+           font-size: 1.3rem;
+           text-transform: uppercase;
+           align-self: center;
+           color: white;
+           font-weight: bolder;
+       }
+            input,button{
+                outline: none;
+                border:none;
+                width: 100%;
+                padding: .7em .8em;
+            }
+            button{
+                cursor: pointer;
+           font-size: .8rem;
+
+                background-color: white;
+                width: auto;
+                align-self: center;
+                padding: .7em 2em;
+                font-weight: bolder;
+                color: rgb(13, 157, 206);
+            }
+        }
+    }
+    .signup{
+        background: #000;
+
+    }
 }

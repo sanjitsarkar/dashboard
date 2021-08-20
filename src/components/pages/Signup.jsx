@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Signup = () => {
+    const handleSignup = ()=>{
+        
+    }
     return (
-        <div>
-            
+        <div className="signup">
+            <form onSubmit={(e)=>handleSignup(e)}>
+                <input type="text" placeholder="Full Name" />
+            </form>
         </div>
     )
 }
